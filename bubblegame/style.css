@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Heebo;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(151, 170, 244);
+    gap: 10px;
+}
+
+#panel {
+    overflow: hidden;
+    width: 60%;
+    height: 70%;
+    background-color: white;
+    border-radius: 15px;
+}
+
+#ptop{
+    width: 100%;
+    height: 90px;
+    background-color: rgb(50, 66, 128);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.element h3{
+    font-weight: 400;
+}
+.element{
+  display: flex;
+  gap:15px;
+  padding: 3px 60px;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+.box{
+   color: rgb(33, 45, 93) ;
+   padding: 5px 10px;
+   background-color: white;
+   border-radius: 5px;
+}
+
+.pbottom{
+    height : calc(100% - 90px);
+    padding:8px;
+    gap : 0 5px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.bubble {
+    height: 30px;
+    width: 30px;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color:rgb(33, 45, 93) ;
+    border-radius: 50%;
+    transition: transform 0.2s ease-in-out;
+}
+.bubble:hover{
+    background-color: rgb(10, 19, 49);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+#play{
+    width : 60px;
+    height: 30px;
+    background-color: rgb(33, 45, 93);
+    color: white;
+    
+}
+#restart{
+    width : 60px;
+    height: 30px;
+    background-color: rgb(33, 45, 93);
+    color: white;
+}
+
